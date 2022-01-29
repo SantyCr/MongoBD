@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/demo')
     .then(() => console.log('Conectado ha MongoBD'))
     .catch( err=> console.log('No se pudo conectar con MongoBD', err))
+
 // Crea un shema 
 const cursoShema = new mongoose.Schema({
     nombre : String,
