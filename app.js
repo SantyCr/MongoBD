@@ -4,7 +4,7 @@ mongoose.connect('mongodb://localhost:27017/demo')
     .then(() => console.log('Conectado ha MongoBD'))
     .catch( err=> console.log('No se pudo conectar con MongoBD', err))
 
-// Crea un shema 
+// Crea un shema "La estructura de la la coleccion, el contenido de la colecion"
 const cursoShema = new mongoose.Schema({
     nombre : String,
     autor : String,
