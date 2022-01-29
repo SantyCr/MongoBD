@@ -56,7 +56,7 @@ async function actualizarCurso (id){
 
 actualizarCurso("61f42532fdc55c9312fff7ae");
 
-
+//Se elimida de el dato de la coleccion
 async function eliminarDocumento (){
     const resutado = await Curso.findByIdAndDelete(id)
     console.log(resutado);
